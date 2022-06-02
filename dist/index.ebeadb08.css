@@ -231,15 +231,31 @@ span:hover:after {
 }
 
 .widtherCard:nth-child(2) {
-  background-color: var(--pseudo-card2);
+  background-color: var(--pseudo-card4);
 }
 
 .widtherCard:nth-child(3) {
-  background-color: var(--pseudo-card3);
+  background-color: var(--pseudo-card2);
 }
 
 .widtherCard:nth-child(4) {
+  background-color: var(--pseudo-card3);
+}
+
+.widtherCard:nth-child(5) {
   background-color: var(--pseudo-card4);
+}
+
+.widtherCard:nth-child(6) {
+  background-color: var(--pseudo-card1);
+}
+
+.widtherCard:nth-child(7) {
+  background-color: var(--pseudo-card2);
+}
+
+.widtherCard:nth-child(8) {
+  background-color: var(--pseudo-card3);
 }
 
 .widtherCard .description, .widtherCard .details {
