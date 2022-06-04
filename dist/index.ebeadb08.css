@@ -131,8 +131,8 @@ span:hover:after {
 .technos .paragraph {
   letter-spacing: 4px;
   opacity: .8;
-  color: var(--pseudo-primary);
   -webkit-text-stroke: .1px var(--pseudo-secondary);
+  color: var(--pseudo-primary);
   font-family: Noto Serif Display, serif;
   font-size: 1.7em;
   font-weight: bold;
