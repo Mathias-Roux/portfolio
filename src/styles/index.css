@@ -133,15 +133,24 @@ span:hover:after {
   width: 840px;
 }
 
-.technos i {
+.technos .paragraph {
   font-size: 1.7em;
   font-family: "Noto Serif Display", serif;
   font-weight: bold;
-  color: var(--pseudo-primary);
-  transition: color 1s ease;
   letter-spacing: 4px;
   opacity: 0.8;
+  color: var(--pseudo-primary);
   -webkit-text-stroke: 0.1px var(--pseudo-secondary);
+  overflow-y: hidden;
+}
+
+.technos .paragraph p {
+  margin: 0;
+}
+
+
+.technos i {
+  transition: color 1s ease;
 }
 
 .technos i:hover {
