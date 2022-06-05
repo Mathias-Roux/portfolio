@@ -1,20 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap";
 :root {
-  --pseudo-primary: #EAE7DC;
-  --pseudo-secondary: #E85A4F;
-  --pseudo-oppositeColor: #88BDBC;
-  --pseudo-card1: #D3DEDC;
+  --pseudo-primary: #eae7dc;
+  --pseudo-secondary: #e85a4f;
+  --pseudo-oppositeColor: #88bdbc;
+  --pseudo-card1: #d3dedc;
   --pseudo-card2: #dfe36d;
   --pseudo-card3: #f0f5ed;
-  --pseudo-card4: #FFEFEF;
+  --pseudo-card4: #ffefef;
 }
 
 .darkMode {
-  --pseudo-primary: #112D32;
-  --pseudo-secondary: #88BDBC;
-  --pseudo-oppositeColor: #E85A4F;
+  --pseudo-primary: #112d32;
+  --pseudo-secondary: #88bdbc;
+  --pseudo-oppositeColor: #e85a4f;
   --pseudo-card1: #4a574d;
   --pseudo-card2: #4e4a57;
   --pseudo-card3: #574a4d;
@@ -22,22 +21,18 @@
 }
 
 body {
-  display: flex;
-  margin: 0;
-  padding: 0 0 0 100px;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  font-family: "Heebo", sans-serif;
   background: var(--pseudo-primary);
   cursor: default;
   color: var(--pseudo-secondary);
-  transition: all 0.6s ease;
-  /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
-  /* Hide scrollbar for Chrome, Safari and Opera */
+  margin: 0;
+  padding: 0 0 0 100px;
+  font-family: Heebo, sans-serif;
+  transition: all .6s;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -48,11 +43,11 @@ body::-webkit-scrollbar {
   height: 100vh;
   width: 15px;
   background: var(--pseudo-oppositeColor);
+  border-radius: 0 10px 10px 0;
+  transition: all .6s;
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 0 10px 10px 0;
-  transition: all 0.6s ease;
 }
 
 .sideBar:hover {
@@ -63,9 +58,9 @@ body::-webkit-scrollbar {
 #left {
   width: 40%;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
+  display: flex;
   overflow-x: hidden;
 }
 
@@ -76,10 +71,10 @@ body::-webkit-scrollbar {
 }
 
 .description, .details {
-  font-size: 18px;
   max-width: 400px;
   text-align: center;
   opacity: 0;
+  font-size: 18px;
   position: absolute;
   top: -9999px;
 }
@@ -90,16 +85,15 @@ body::-webkit-scrollbar {
 }
 
 .titleWrap {
-  margin-top: 30px !important;
   max-width: 200px;
+  margin-top: 30px !important;
 }
 
-.title__inner-name > span{
-  font-family: "Noto Serif Display", serif;
-  font-weight: unset !important;
+.title__inner-name > span {
+  font-family: Noto Serif Display, serif;
   font-size: 4.1em;
-  font-family: "Noto Serif Display", serif;
-  line-height: 0.9;
+  line-height: .9;
+  font-weight: unset !important;
   font-weight: unset !important;
 }
 
@@ -110,7 +104,7 @@ body::-webkit-scrollbar {
   overflow-y: hidden;
 }
 
-.bio > span{
+.bio > span {
   font-size: 1.2em;
 }
 
@@ -119,23 +113,22 @@ body::-webkit-scrollbar {
 }
 
 .technos .paragraph {
-  font-size: 1.7em;
-  font-family: "Noto Serif Display", serif;
-  font-weight: bold;
   letter-spacing: 4px;
-  opacity: 0.8;
- 
-  -webkit-text-stroke: 0.1px var(--pseudo-secondary);
+  opacity: .8;
+  -webkit-text-stroke: .1px var(--pseudo-secondary);
   color: var(--pseudo-primary);
+  font-family: Noto Serif Display, serif;
+  font-size: 1.7em;
+  font-weight: bold;
   overflow-y: hidden;
 }
 
-.technos .paragraph p{
+.technos .paragraph p {
   margin: 0;
 }
 
 .technos i {
-  transition: color 1s ease;
+  transition: color 1s;
 }
 
 .technos i:hover {
@@ -143,14 +136,14 @@ body::-webkit-scrollbar {
 }
 
 .socials-list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .socials-list a {
-  font-size: 1.1em;
   color: var(--pseudo-secondary);
+  font-size: 1.1em;
   text-decoration: none;
 }
 
@@ -159,8 +152,8 @@ body::-webkit-scrollbar {
 }
 
 .left-bottom {
-  display: flex;
   justify-content: space-between;
+  display: flex;
 }
 
 .left-bottom .tipDiv {
@@ -173,13 +166,13 @@ body::-webkit-scrollbar {
 }
 
 .left-bottom .tipDiv .text i {
-  font-family: "Noto Serif Display", serif;
-  font-weight: bold;
   color: var(--pseudo-secondary);
-  transition: color 1s ease;
   letter-spacing: 1px;
-  opacity: 0.9;
-  -webkit-text-stroke: 0.1px var(--pseudo-secondary);
+  opacity: .9;
+  -webkit-text-stroke: .1px var(--pseudo-secondary);
+  font-family: Noto Serif Display, serif;
+  font-weight: bold;
+  transition: color 1s;
 }
 
 .left-bottom .tipDiv svg {
@@ -193,29 +186,28 @@ body::-webkit-scrollbar {
 }
 
 span {
-  display: inline-block;
   font-size: 24px;
+  display: inline-block;
   position: relative;
 }
 
 span:after {
   content: "";
-  position: absolute;
   width: 100%;
-  transform: scaleX(0);
   height: 1px;
+  background-color: var(--pseudo-secondary);
+  transform-origin: 100% 100%;
+  transition: transform .25s ease-out;
+  position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--pseudo-secondary);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
 }
 
 span:hover:after {
+  transform-origin: 0 100%;
   transform: scaleX(1);
-  transform-origin: bottom left;
 }
-
 
 @media screen and (min-width: 1275px) {
   .first-card {
@@ -224,14 +216,14 @@ span:hover:after {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   min-width: 200px;
+  border-right: 1px solid var(--pseudo-secondary);
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid var(--pseudo-secondary);
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease-in-out;
+  display: flex;
 }
 
 .card:hover {
@@ -286,18 +278,18 @@ span:hover:after {
   opacity: 1;
   position: initial;
   min-width: 400px;
-  transition: opacity 1.2s linear 0.4s;
+  transition: opacity 1.2s linear .4s;
 }
 
 .widtherCard .details {
-  font-size: 0.9em;
-  font-family: "Noto Serif Display", serif;
+  font-family: Noto Serif Display, serif;
+  font-size: .9em;
   font-weight: bold;
 }
 
 .widtherCard .details i {
   color: var(--pseudo-secondary);
-  transition: letter-spacing 0.6s ease-in-out;
+  transition: letter-spacing .6s ease-in-out;
 }
 
 .widtherCard .details i:hover {
@@ -306,24 +298,24 @@ span:hover:after {
 
 @media screen and (max-width: 1275px) {
   body {
+    padding: 0;
     display: inline-block;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 0;
   }
 
   .sideBar {
     height: 15px;
     width: 100vw;
-    border-radius: 10px 0 0 10px;
     height: 30px;
     width: 30px;
     background: var(--pseudo-oppositeColor);
+    border-radius: 10px 0 0 10px;
+    transition: background .6s;
     position: absolute;
     top: 25px;
-    right: 0;
     left: auto;
-    transition: background 0.6s ease;
+    right: 0;
   }
 
   .banner {
@@ -341,26 +333,22 @@ span:hover:after {
   #left {
     width: 100vw;
     height: 45%;
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0;
     align-items: center;
+    margin: 0;
+    display: flex;
   }
 
-  #left .tipDiv {
-    display: none;
-  }
-
-  .technos {
+  #left .tipDiv, .technos {
     display: none;
   }
 
   #right {
     width: 100vw;
     height: 50%;
-    display: inline-block;
     padding-top: 60px;
+    display: inline-block;
   }
 
   .socials-list {
@@ -373,20 +361,20 @@ span:hover:after {
   }
 
   .socials-list li a {
-    font-size: 1em;
-    font-family: "Noto Serif Display", serif;
-    font-weight: bold;
     color: var(--pseudo-secondary);
     letter-spacing: 4px;
-    opacity: 0.9;
-    -webkit-text-stroke: 0.1px var(--pseudo-secondary);
+    opacity: .9;
+    -webkit-text-stroke: .1px var(--pseudo-secondary);
+    font-family: Noto Serif Display, serif;
+    font-size: 1em;
+    font-weight: bold;
   }
 
   .card {
     height: 200px;
     border-top: 1px solid var(--pseudo-secondary);
-    transition: all 0.5s ease-in-out;
     border-right: none;
+    transition: all .5s ease-in-out;
   }
 
   .card:last-of-type {
@@ -400,19 +388,18 @@ span:hover:after {
 
   .widtherCard span:after {
     content: "";
-    position: absolute;
     width: 100%;
-    transform: scaleX(1);
     height: 1px;
+    background-color: var(--pseudo-secondary);
+    position: absolute;
     bottom: 0;
     left: 0;
-    background-color: var(--pseudo-secondary);
+    transform: scaleX(1);
   }
 
   .widtherCard .description, .widtherCard .details {
     min-width: 351px;
   }
-
 }
 
 @media screen and (min-width: 1540px) {
@@ -425,8 +412,8 @@ span:hover:after {
   }
 
   .bio {
-    font-size: 1.3em;
     max-width: 300px;
+    font-size: 1.3em;
   }
 
   .socials-list a {
@@ -445,3 +432,5 @@ span:hover:after {
     font-size: 1.9em;
   }
 }
+
+/*# sourceMappingURL=index.ebeadb08.css.map */

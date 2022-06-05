@@ -31,3 +31,32 @@ technoLines.forEach(line => {
 		ease: 'Power3.In'
 	})
 })
+
+const names = [...document.querySelectorAll('.title__inner-name > span')]
+
+names.forEach(name => {
+	gsap.set(name, {
+		x: '-100%',
+		opacity: 0
+	})
+	gsap.to(name, {
+		x: '0%',
+		opacity: 1,
+		duration: 0.7,
+		ease: 'Power3.In'
+	})
+})
+
+
+const bio = document.querySelector('.bio > span')
+
+gsap.set(bio, {
+	y: '100%',
+	opacity: 0
+})
+gsap.to(bio, {
+	y: '0%',
+	opacity: 1,
+	duration: 0.7,
+	ease: 'Power3.In'
+})
