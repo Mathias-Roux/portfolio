@@ -59,28 +59,27 @@
 }
 
 @media screen and (min-width: 53em) {
-  .banner {
-    height: 260px;
-  }
-
   .banner .bio {
-    top: 33%;
-    left: 77%;
+    width: 207px;
+    top: 68%;
+    left: 66%;
   }
 
   #left {
-    width: 100vw;
-    height: 45%;
-    flex-direction: column;
-    justify-content: space-around;
+    width: 45vw;
+    height: 100vh;
     align-items: center;
     margin: 0;
-    display: flex;
   }
 
   .technos {
-    width: 840px;
+    width: 747px;
+    margin-left: 270px;
     display: block;
+  }
+
+  .technos:hover {
+    cursor: default;
   }
 
   .technos .paragraph {
@@ -107,11 +106,17 @@
   }
 
   .left-bottom {
+    width: 100%;
     justify-content: space-between;
     display: flex;
   }
 
-  .left-bottom .tipDiv {
+  .socials-list {
+    margin-left: 90px;
+    display: inline-block;
+  }
+
+  #left .tipDiv {
     display: inline-block;
     position: relative;
   }
@@ -133,7 +138,7 @@
 
   .left-bottom .tipDiv svg {
     position: absolute;
-    top: -33px;
+    top: -45px;
     left: 13px;
   }
 
@@ -195,8 +200,8 @@
   display: flex;
 }
 
-.card > * {
-  padding-bottom: 12px;
+.card > .description {
+  margin: 12px 0;
 }
 
 .card:hover {

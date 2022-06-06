@@ -56,9 +56,6 @@
   list-style: none;
 }
 
-.socials-list li {
-}
-
 .socials-list li a {
   font-size: 1em;
   font-family: "Noto Serif Display", serif;
@@ -74,33 +71,30 @@
   color: var(--pseudo-secondary);
 }
 
+
 @media screen and (min-width: 53em) {
 
-  .banner {
-    height: 260px;
-  }
-
-  .banner, .title__inner-name > .inner {
-  }
-
   .banner .bio {
-    top: 33%;
-    left: 77%;
+    width: 207px;
+    top: 68%;
+    left: 66%;
   }
 
   #left {
-    width: 100vw;
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    width: 45vw;
+    height: 100vh;
     margin: 0;
     align-items: center;
   }
 
   .technos {
     display: block;
-    width: 840px;
+    margin-left: 270px;
+    width: 747px;
+  }
+
+  .technos:hover {
+    cursor: default;
   }
 
   .technos .paragraph {
@@ -109,7 +103,6 @@
     font-weight: bold;
     letter-spacing: 4px;
     opacity: 0.8;
-   
     -webkit-text-stroke: 0.1px var(--pseudo-secondary);
     color: var(--pseudo-primary);
     overflow-y: hidden;
@@ -126,12 +119,19 @@
   .technos i:hover {
     color: var(--pseudo-secondary);
   }
+
   .left-bottom {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 
-  .left-bottom .tipDiv {
+  .socials-list {
+    display: inline-block;
+    margin-left: 90px;
+  }
+
+  #left .tipDiv {
     display: inline-block;
     position: relative;
   }
@@ -153,7 +153,7 @@
 
   .left-bottom .tipDiv svg {
     position: absolute;
-    top: -33px;
+    top: -45px;
     left: 13px;
   }
 
