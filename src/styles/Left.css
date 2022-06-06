@@ -24,11 +24,8 @@
 
 .title__inner-name > .inner{
   font-family: "Noto Serif Display", serif;
-  font-weight: unset !important;
   font-size: 4.1em;
-  font-family: "Noto Serif Display", serif;
   line-height: 0.9;
-  font-weight: unset !important;
 }
 
 .bio {
@@ -36,10 +33,6 @@
   top: 68%;
   left: 44%;
   overflow-y: hidden;
-
-}
-
-.bio > .inner{
 }
 
 #left .tipDiv {
@@ -74,6 +67,10 @@
 
 @media screen and (min-width: 53em) {
 
+  .banner{
+    margin: 0 auto;
+  }
+
   .banner .bio {
     width: 207px;
     top: 68%;
@@ -81,16 +78,14 @@
   }
 
   #left {
-    width: 45vw;
-    height: 100vh;
-    margin: 0;
-    align-items: center;
+    width: 40vw;
+    margin-bottom: 0;
   }
 
   .technos {
     display: block;
-    margin-left: 270px;
-    width: 747px;
+    margin-left: 10%;
+    width: 2000px;
   }
 
   .technos:hover {
@@ -128,7 +123,7 @@
 
   .socials-list {
     display: inline-block;
-    margin-left: 90px;
+    margin-left: 10%;
   }
 
   #left .tipDiv {
@@ -159,29 +154,5 @@
 
   .left-bottom .tipDiv svg path {
     stroke: var(--pseudo-secondary);
-  }
-}
-
-@media screen and (min-width: 1540px) {
-
-  .title__inner-name > span {
-    font-size: 5.1em;
-  }
-
-  .bio {
-    font-size: 1.3em;
-    max-width: 300px;
-  }
-
-  .socials-list a {
-    font-size: 1.4em;
-  }
-
-  .technos {
-    width: 830px;
-  }
-
-  .technos i {
-    font-size: 1.9em;
   }
 }

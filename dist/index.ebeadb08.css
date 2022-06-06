@@ -22,8 +22,6 @@
   font-family: Noto Serif Display, serif;
   font-size: 4.1em;
   line-height: .9;
-  font-weight: unset !important;
-  font-weight: unset !important;
 }
 
 .bio {
@@ -59,6 +57,10 @@
 }
 
 @media screen and (min-width: 53em) {
+  .banner {
+    margin: 0 auto;
+  }
+
   .banner .bio {
     width: 207px;
     top: 68%;
@@ -66,15 +68,13 @@
   }
 
   #left {
-    width: 45vw;
-    height: 100vh;
-    align-items: center;
-    margin: 0;
+    width: 40vw;
+    margin-bottom: 0;
   }
 
   .technos {
-    width: 747px;
-    margin-left: 270px;
+    width: 2000px;
+    margin-left: 10%;
     display: block;
   }
 
@@ -112,7 +112,7 @@
   }
 
   .socials-list {
-    margin-left: 90px;
+    margin-left: 10%;
     display: inline-block;
   }
 
@@ -144,29 +144,6 @@
 
   .left-bottom .tipDiv svg path {
     stroke: var(--pseudo-secondary);
-  }
-}
-
-@media screen and (min-width: 1540px) {
-  .title__inner-name > span {
-    font-size: 5.1em;
-  }
-
-  .bio {
-    max-width: 300px;
-    font-size: 1.3em;
-  }
-
-  .socials-list a {
-    font-size: 1.4em;
-  }
-
-  .technos {
-    width: 830px;
-  }
-
-  .technos i {
-    font-size: 1.9em;
   }
 }
 
@@ -276,7 +253,7 @@
 
 @media screen and (min-width: 53em) {
   #right {
-    width: 50vw;
+    width: 60vw;
     height: 100vh;
     display: flex;
   }
@@ -369,7 +346,7 @@
   transform: scaleX(0);
 }
 
-.project:hover:after {
+.card:hover > .project:after {
   transform-origin: 0 100%;
   transform: scaleX(1);
 }
@@ -420,12 +397,6 @@ body::-webkit-scrollbar {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-  }
-}
-
-@media screen and (min-width: 1540px) {
-  body {
-    padding: 0 0 0 190px;
   }
 }
 

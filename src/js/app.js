@@ -17,46 +17,55 @@ sideBar.addEventListener('click', event => {
 })
 
 
-const technoLines = [...document.querySelectorAll('.paragraph p')]
+const technoLines = [...document.querySelectorAll('.paragraph p')];
 
 technoLines.forEach(line => {
 	gsap.set(line, {
-		y: '100%',
-		opacity: 0
-	})
+		y: '100%'
+	});
 	gsap.to(line, {
 		y: '0%',
-		opacity: 1,
 		duration: 0.7,
 		ease: 'Power3.In'
-	})
-})
+	});
+});
 
-const names = document.querySelectorAll('.title__inner-name > .inner')
+const names = [...document.querySelectorAll('.title__inner-name .inner')];
 
 names.forEach(name => {
 	gsap.set(name, {
-		y: '100%',
-		opacity: 0
-	})
+		y: '100%'
+	});
 	gsap.to(name, {
 		y: '0%',
-		opacity: 1,
 		duration: 0.7,
 		ease: 'Power3.In'
-	})
-})
+	});
+});
 
 
 const bio = document.querySelector('.bio > .inner')
 
 gsap.set(bio, {
-	y: '100%',
-	opacity: 0
+	y: '100%'
 })
 gsap.to(bio, {
 	y: '0%',
-	opacity: 1,
 	duration: 0.7,
 	ease: 'Power3.In'
 })
+
+
+const links = [...document.querySelectorAll('.socials-list li a > .inner')];
+
+links.forEach(link => {
+	gsap.set(link, {
+		y: '100%'
+	});
+	gsap.to(link, {
+		y: '0%',
+		duration: 0.7,
+		ease: 'Power3.In'
+	});
+});
+

@@ -59,9 +59,3 @@ body::-webkit-scrollbar {
     overflow-y: hidden;
   }
 }
-
-@media screen and (min-width: 1540px) {
-  body {
-    padding: 0 0 0 190px;
-  }
-}

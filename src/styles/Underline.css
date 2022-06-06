@@ -17,7 +17,7 @@
   transition: transform 0.25s ease-out;
 }
 
-.project:hover:after {
+.card:hover > .project:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
