@@ -533,22 +533,20 @@ technoLines.forEach((line)=>{
         ease: "Power3.In"
     });
 });
-const names = [
-    ...document.querySelectorAll(".title__inner-name > span")
-];
+const names = document.querySelectorAll(".title__inner-name > .inner");
 names.forEach((name)=>{
     (0, _gsapDefault.default).set(name, {
-        x: "-100%",
+        y: "100%",
         opacity: 0
     });
     (0, _gsapDefault.default).to(name, {
-        x: "0%",
+        y: "0%",
         opacity: 1,
         duration: 0.7,
         ease: "Power3.In"
     });
 });
-const bio = document.querySelector(".bio > span");
+const bio = document.querySelector(".bio > .inner");
 (0, _gsapDefault.default).set(bio, {
     y: "100%",
     opacity: 0

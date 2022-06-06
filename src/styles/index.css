@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap");
 
+@import './Left.css';
+@import './Right.css';
+@import './Underline.css';
+@import './Sidebar.css';
+
 :root {
   --pseudo-primary: #EAE7DC;
   --pseudo-secondary: #E85A4F;
@@ -21,15 +26,17 @@
   --pseudo-card4: #57504a;
 }
 
-body {
-  display: flex;
+*, ::before, ::after{
   margin: 0;
-  padding: 0 0 0 100px;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
   font-family: "Heebo", sans-serif;
   background: var(--pseudo-primary);
-  cursor: default;
   color: var(--pseudo-secondary);
   transition: all 0.6s ease;
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -44,404 +51,17 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.sideBar {
-  height: 100vh;
-  width: 15px;
-  background: var(--pseudo-oppositeColor);
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 0 10px 10px 0;
-  transition: all 0.6s ease;
-}
 
-.sideBar:hover {
-  width: 30px;
-  cursor: pointer;
-}
-
-#left {
-  width: 40%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  overflow-x: hidden;
-}
-
-#right {
-  width: 60%;
-  height: 100vh;
-  display: flex;
-}
-
-.description, .details {
-  font-size: 18px;
-  max-width: 400px;
-  text-align: center;
-  opacity: 0;
-  position: absolute;
-  top: -9999px;
-}
-
-.banner {
-  height: 230px;
-  position: relative;
-}
-
-.titleWrap {
-  margin-top: 30px !important;
-  max-width: 200px;
-}
-
-.title__inner-name > span{
-  font-family: "Noto Serif Display", serif;
-  font-weight: unset !important;
-  font-size: 4.1em;
-  font-family: "Noto Serif Display", serif;
-  line-height: 0.9;
-  font-weight: unset !important;
-}
-
-.bio {
-  position: absolute;
-  top: 28%;
-  left: 56%;
-  overflow-y: hidden;
-}
-
-.bio > span{
-  font-size: 1.2em;
-}
-
-.technos {
-  width: 840px;
-}
-
-.technos .paragraph {
-  font-size: 1.7em;
-  font-family: "Noto Serif Display", serif;
-  font-weight: bold;
-  letter-spacing: 4px;
-  opacity: 0.8;
- 
-  -webkit-text-stroke: 0.1px var(--pseudo-secondary);
-  color: var(--pseudo-primary);
-  overflow-y: hidden;
-}
-
-.technos .paragraph p{
-  margin: 0;
-}
-
-.technos i {
-  transition: color 1s ease;
-}
-
-.technos i:hover {
-  color: var(--pseudo-secondary);
-}
-
-.socials-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.socials-list a {
-  font-size: 1.1em;
-  color: var(--pseudo-secondary);
-  text-decoration: none;
-}
-
-.socials-list a:visited {
-  color: var(--pseudo-secondary);
-}
-
-.left-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-bottom .tipDiv {
-  position: relative;
-}
-
-.left-bottom .tipDiv .text {
-  width: 220px;
-  text-align: center;
-}
-
-.left-bottom .tipDiv .text i {
-  font-family: "Noto Serif Display", serif;
-  font-weight: bold;
-  color: var(--pseudo-secondary);
-  transition: color 1s ease;
-  letter-spacing: 1px;
-  opacity: 0.9;
-  -webkit-text-stroke: 0.1px var(--pseudo-secondary);
-}
-
-.left-bottom .tipDiv svg {
-  position: absolute;
-  top: -33px;
-  left: 13px;
-}
-
-.left-bottom .tipDiv svg path {
-  stroke: var(--pseudo-secondary);
-}
-
-span {
-  display: inline-block;
-  font-size: 24px;
-  position: relative;
-}
-
-span:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--pseudo-secondary);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-span:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
-@media screen and (min-width: 1275px) {
-  .first-card {
-    border-left: 1px solid var(--pseudo-secondary);
-  }
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  min-width: 200px;
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid var(--pseudo-secondary);
-  transition: all 0.5s ease-in-out;
-}
-
-.card:hover {
-  cursor: pointer;
-}
-
-.card a {
-  text-decoration: none;
-}
-
-.card a:visited {
-  color: var(--pseudo-secondary);
-}
-
-.widtherCard {
-  min-width: 500px;
-}
-
-.widtherCard:nth-child(1) {
-  background-color: var(--pseudo-card1);
-}
-
-.widtherCard:nth-child(2) {
-  background-color: var(--pseudo-card4);
-}
-
-.widtherCard:nth-child(3) {
-  background-color: var(--pseudo-card2);
-}
-
-.widtherCard:nth-child(4) {
-  background-color: var(--pseudo-card3);
-}
-
-.widtherCard:nth-child(5) {
-  background-color: var(--pseudo-card4);
-}
-
-.widtherCard:nth-child(6) {
-  background-color: var(--pseudo-card1);
-}
-
-.widtherCard:nth-child(7) {
-  background-color: var(--pseudo-card2);
-}
-
-.widtherCard:nth-child(8) {
-  background-color: var(--pseudo-card3);
-}
-
-.widtherCard .description, .widtherCard .details {
-  opacity: 1;
-  position: initial;
-  min-width: 400px;
-  transition: opacity 1.2s linear 0.4s;
-}
-
-.widtherCard .details {
-  font-size: 0.9em;
-  font-family: "Noto Serif Display", serif;
-  font-weight: bold;
-}
-
-.widtherCard .details i {
-  color: var(--pseudo-secondary);
-  transition: letter-spacing 0.6s ease-in-out;
-}
-
-.widtherCard .details i:hover {
-  letter-spacing: 1px;
-}
-
-@media screen and (max-width: 1275px) {
+@media screen and (min-width: 53em) {
   body {
-    display: inline-block;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    padding: 0;
-  }
-
-  .sideBar {
-    height: 15px;
-    width: 100vw;
-    border-radius: 10px 0 0 10px;
-    height: 30px;
-    width: 30px;
-    background: var(--pseudo-oppositeColor);
-    position: absolute;
-    top: 25px;
-    right: 0;
-    left: auto;
-    transition: background 0.6s ease;
-  }
-
-  .banner {
-    height: 260px;
-  }
-
-  .banner, .title__inner-name > span {
-    font-size: 2em;
-  }
-
-  .banner .bio > span {
-    font-size: .7em;
-  }
-
-  #left {
-    width: 100vw;
-    height: 45%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0;
-    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
-
-  #left .tipDiv {
-    display: none;
-  }
-
-  .technos {
-    display: none;
-  }
-
-  #right {
-    width: 100vw;
-    height: 50%;
-    display: inline-block;
-    padding-top: 60px;
-  }
-
-  .socials-list {
-    padding: 0;
-    display: flex;
-  }
-
-  .socials-list li {
-    padding: 0 0 0 20px;
-  }
-
-  .socials-list li a {
-    font-size: 1em;
-    font-family: "Noto Serif Display", serif;
-    font-weight: bold;
-    color: var(--pseudo-secondary);
-    letter-spacing: 4px;
-    opacity: 0.9;
-    -webkit-text-stroke: 0.1px var(--pseudo-secondary);
-  }
-
-  .card {
-    height: 200px;
-    border-top: 1px solid var(--pseudo-secondary);
-    transition: all 0.5s ease-in-out;
-    border-right: none;
-  }
-
-  .card:last-of-type {
-    border-bottom: 1px solid var(--pseudo-secondary);
-  }
-
-  .widtherCard {
-    height: 400px;
-    min-width: 0;
-  }
-
-  .widtherCard span:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(1);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--pseudo-secondary);
-  }
-
-  .widtherCard .description, .widtherCard .details {
-    min-width: 351px;
-  }
-
 }
 
 @media screen and (min-width: 1540px) {
   body {
     padding: 0 0 0 190px;
-  }
-
-  .title__inner-name > span {
-    font-size: 5.1em;
-  }
-
-  .bio {
-    font-size: 1.3em;
-    max-width: 300px;
-  }
-
-  .socials-list a {
-    font-size: 1.4em;
-  }
-
-  .card {
-    width: 260px;
-  }
-
-  .technos {
-    width: 830px;
-  }
-
-  .technos i {
-    font-size: 1.9em;
   }
 }
