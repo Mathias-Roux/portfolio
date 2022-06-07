@@ -116,6 +116,7 @@
     height: 100vh;
     min-width: 250px;
     border-right: 1px solid var(--pseudo-secondary);
+    border-bottom: none;
     transition: all 0.5s ease-in-out;
   }
 

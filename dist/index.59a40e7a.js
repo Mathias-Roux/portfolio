@@ -536,7 +536,7 @@ const names = [
 ];
 names.forEach((name)=>{
     (0, _gsapDefault.default).set(name, {
-        y: "100%"
+        y: "120%"
     });
     (0, _gsapDefault.default).to(name, {
         y: "0%",
@@ -554,7 +554,7 @@ const bio = document.querySelector(".bio > .inner");
     ease: "Power3.In"
 });
 const links = [
-    ...document.querySelectorAll(".socials-list li a > .inner")
+    ...document.querySelectorAll(".socials-list span a > .inner")
 ];
 links.forEach((link)=>{
     (0, _gsapDefault.default).set(link, {

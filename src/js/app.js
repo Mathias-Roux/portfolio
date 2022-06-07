@@ -34,7 +34,7 @@ const names = [...document.querySelectorAll('.title__inner-name .inner')];
 
 names.forEach(name => {
 	gsap.set(name, {
-		y: '100%'
+		y: '120%',
 	});
 	gsap.to(name, {
 		y: '0%',
@@ -56,7 +56,7 @@ gsap.to(bio, {
 })
 
 
-const links = [...document.querySelectorAll('.socials-list li a > .inner')];
+const links = [...document.querySelectorAll('.socials-list span a > .inner')];
 
 links.forEach(link => {
 	gsap.set(link, {

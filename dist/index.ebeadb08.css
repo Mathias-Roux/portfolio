@@ -37,11 +37,14 @@
 
 .socials-list {
   justify-content: space-around;
-  list-style: none;
   display: flex;
 }
 
-.socials-list li a {
+.socials-list > span {
+  overflow-y: hidden;
+}
+
+.socials-list > span a {
   color: var(--pseudo-secondary);
   letter-spacing: 4px;
   opacity: .9;
@@ -70,6 +73,7 @@
   #left {
     width: 40vw;
     margin-bottom: 0;
+    overflow: hidden;
   }
 
   .technos {
@@ -90,7 +94,7 @@
     font-family: Noto Serif Display, serif;
     font-size: 1.7em;
     font-weight: bold;
-    overflow-y: hidden;
+    overflow: hidden;
   }
 
   .technos .paragraph p {
@@ -112,8 +116,8 @@
   }
 
   .socials-list {
+    flex-direction: column;
     margin-left: 10%;
-    display: inline-block;
   }
 
   #left .tipDiv {
@@ -262,6 +266,7 @@
     height: 100vh;
     min-width: 250px;
     border-right: 1px solid var(--pseudo-secondary);
+    border-bottom: none;
     transition: all .5s ease-in-out;
   }
 
@@ -375,6 +380,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+::selection {
+  background: #fff;
 }
 
 body {
