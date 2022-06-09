@@ -31,7 +31,6 @@
 .bio {
   margin: 0 0 5px 10px;
   font-size: .25em;
-  overflow-y: hidden;
 }
 
 #left .tipDiv {
@@ -112,6 +111,10 @@
     width: 40vw;
     margin-bottom: 0;
     overflow: hidden;
+  }
+
+  .mobile__technos {
+    display: none;
   }
 
   .technos {
@@ -274,7 +277,7 @@
 .widtherCard .description, .widtherCard .details {
   opacity: 1;
   position: initial;
-  min-width: 400px;
+  min-width: 370px;
   transition: opacity 1.2s linear .4s;
 }
 

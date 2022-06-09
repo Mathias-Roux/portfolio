@@ -84,7 +84,7 @@
 .widtherCard .description, .widtherCard .details {
   opacity: 1;
   position: initial;
-  min-width: 400px;
+  min-width: 370px;
   transition: opacity 1.2s linear 0.4s;
 }
 

@@ -30,7 +30,6 @@
 .bio {
   font-size: .25em;
   margin: 0 0 5px 10px;
-  overflow-y: hidden;
 }
 
 #left .tipDiv {
@@ -108,6 +107,10 @@
     width: 40vw;
     margin-bottom: 0;
     overflow: hidden;
+  }
+
+  .mobile__technos{
+    display: none;
   }
 
   .technos {
