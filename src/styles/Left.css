@@ -109,7 +109,7 @@
     overflow: hidden;
   }
 
-  .mobile__technos{
+  .mobile__technos {
     display: none;
   }
 
@@ -144,6 +144,10 @@
 
   .technos i:hover {
     color: var(--pseudo-secondary);
+  }
+
+  .mobile__technos{
+    display: none;
   }
 
   .left-bottom {
