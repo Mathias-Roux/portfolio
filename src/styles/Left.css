@@ -9,8 +9,7 @@
 }
 
 .banner {
-  position: relative;
-  margin: 40px 0 60px 0;
+  margin: 40px 0 40px 0;
 }
 
 .title__inner-name{
@@ -23,15 +22,45 @@
   line-height: 0.9;
 }
 
+.title__inner-name:last-of-type > .inner{
+  display: flex;
+  align-items: flex-end;
+}
+
 .bio {
-  position: absolute;
-  top: 68%;
-  left: 44%;
+  font-size: .25em;
+  margin: 0 0 5px 10px;
   overflow-y: hidden;
 }
 
 #left .tipDiv {
   display: none;
+}
+
+.mobile__technos{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: var(--pseudo-secondary);
+  margin-bottom: 40px;
+}
+
+.paragraph__slider{
+  white-space: nowrap;
+  animation: scroll 30s infinite linear;
+  font-size: 1.7em;
+  font-family: "Noto Serif Display", serif;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: var(--pseudo-primary);
+  cursor: default;
+}
+
+@keyframes scroll {
+  0%{transform: translate3d(0, 0, 0);}
+  100%{transform: translate3d(-100%, 0, 0);}
 }
 
 .technos {
