@@ -18,7 +18,7 @@
 
 .title__inner-name > .inner{
   font-family: "Noto Serif Display", serif;
-  font-size: 4.1em;
+  font-size: clamp(4.1em, 2em, 5em);
   line-height: 0.9;
 }
 

@@ -81,6 +81,14 @@
   background-color: var(--pseudo-card3);
 }
 
+.widtherCard:nth-child(9) {
+  background-color: var(--pseudo-card1);
+}
+
+.widtherCard:nth-child(10) {
+  background-color: var(--pseudo-card4);
+}
+
 .widtherCard .description, .widtherCard .details {
   opacity: 1;
   position: initial;
