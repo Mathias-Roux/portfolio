@@ -1,6 +1,6 @@
 .project {
   display: inline-block;
-  font-size: 24px;
+  font-size: clamp(24px, 1vw, 34px);
   position: relative;
 }
 

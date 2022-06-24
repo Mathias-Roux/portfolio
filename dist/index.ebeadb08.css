@@ -19,7 +19,7 @@
 
 .title__inner-name > .inner {
   font-family: Noto Serif Display, serif;
-  font-size: 4.1em;
+  font-size: clamp(65.6px, 5vw, 130px);
   line-height: .9;
 }
 
@@ -30,7 +30,7 @@
 
 .bio {
   margin: 0 0 5px 10px;
-  font-size: .25em;
+  font-size: clamp(16.4px, 1.5vw, 39px);
 }
 
 #left .tipDiv {
@@ -87,7 +87,7 @@
   opacity: .9;
   -webkit-text-stroke: .1px var(--pseudo-secondary);
   font-family: Noto Serif Display, serif;
-  font-size: 1em;
+  font-size: clamp(18px, 1.1vw, 29px);
   font-weight: bold;
   text-decoration: none;
 }
@@ -98,11 +98,10 @@
 
 @media screen and (min-width: 53em) {
   .banner {
-    margin: 0 auto;
+    margin-left: 10%;
   }
 
   .banner .bio {
-    width: 207px;
     top: 68%;
     left: 66%;
   }
@@ -133,7 +132,6 @@
     -webkit-text-stroke: .1px var(--pseudo-secondary);
     color: var(--pseudo-primary);
     font-family: Noto Serif Display, serif;
-    font-size: 1.7em;
     font-weight: bold;
     overflow: hidden;
   }
@@ -143,6 +141,7 @@
   }
 
   .technos i {
+    font-size: clamp(27.2px, 2vw, 42px);
     transition: color 1s;
   }
 
@@ -173,6 +172,7 @@
   .left-bottom .tipDiv .text {
     width: 220px;
     text-align: center;
+    font-size: clamp(12px, 3vw, 18px);
   }
 
   .left-bottom .tipDiv .text i {
@@ -204,7 +204,7 @@
   max-width: 400px;
   text-align: center;
   opacity: 0;
-  font-size: 18px;
+  font-size: clamp(18px, 1vw, 28px);
   position: absolute;
   top: -9999px;
 }
@@ -227,7 +227,7 @@
 }
 
 .card > .description {
-  margin: 12px 0;
+  margin: 15px 0 20px;
 }
 
 .card:hover {
@@ -289,13 +289,12 @@
 .widtherCard .description, .widtherCard .details {
   opacity: 1;
   position: initial;
-  min-width: 370px;
   transition: opacity 1.2s linear .4s;
 }
 
 .widtherCard .details {
   font-family: Noto Serif Display, serif;
-  font-size: .9em;
+  font-size: clamp(15px, 1vw, 25px);
   font-weight: bold;
 }
 
@@ -386,7 +385,7 @@
 }
 
 .project {
-  font-size: 24px;
+  font-size: clamp(24px, 1vw, 34px);
   display: inline-block;
   position: relative;
 }

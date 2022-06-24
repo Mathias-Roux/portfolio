@@ -3,7 +3,7 @@
 }
 
 .description, .details {
-  font-size: 18px;
+  font-size: clamp(18px, 1vw, 28px);
   max-width: 400px;
   text-align: center;
   opacity: 0;
@@ -30,7 +30,7 @@
 }
 
 .card > .description {
-  margin: 12px 0;
+  margin: 15px 0 20px 0;
 }
 
 .card:hover {
@@ -92,14 +92,13 @@
 .widtherCard .description, .widtherCard .details {
   opacity: 1;
   position: initial;
-  min-width: 370px;
   transition: opacity 1.2s linear 0.4s;
 }
 
 .widtherCard .details {
-  font-size: 0.9em;
   font-family: "Noto Serif Display", serif;
   font-weight: bold;
+  font-size: clamp(15px, 1vw, 25px);
 }
 
 .widtherCard .details i {
